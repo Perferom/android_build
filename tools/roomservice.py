@@ -199,7 +199,7 @@ def parse_dependency_file(location, fromDeps, firstrun):
     if firstrun and deps_only:
         dep_file = device + ".dependencies"
     else:
-        dep_file = "cm.dependencies"
+        dep_file = "perferom.dependencies"
     dep_location = '/'.join([location, dep_file])
     if not os.path.isfile(dep_location):
         print("WARNING: %s file not found" % dep_location)
